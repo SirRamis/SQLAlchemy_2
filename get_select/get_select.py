@@ -8,11 +8,11 @@ try:
         password="171217",
         host="localhost",
         port=5432,
-        database="Store_1"
+        database="SQLAlchemy"
     )
     engine = create_engine(url)
     connection = engine.connect()
-    print("Подключение успешно!")
+    print("Подключение успешно employees!")
     metadata = MetaData()
 
     employees = Table('employees', metadata, autoload_with=engine)

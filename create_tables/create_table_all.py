@@ -1,8 +1,6 @@
 from sqlalchemy import create_engine, text
-from sqlalchemy.engine import URL
 from dotenv import load_dotenv
-import os
-from decorator_connect import db_url_creator
+from connector.decorator_connect import db_url_creator
 
 
 load_dotenv()
