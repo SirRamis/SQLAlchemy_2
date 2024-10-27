@@ -13,8 +13,8 @@ def insert_inside_orders(url):
 
 
         for i in range(10):
-            id_employee = fake.random_int(21, 30)
-            id_product = fake.random_int(3, 13)
+            id_employee = fake.random_int(1, 10)
+            id_product = fake.random_int(6, 15)
             id_client = fake.random_int(1, 10)
             posting_date = fake.date()
             execution_date = fake.date()

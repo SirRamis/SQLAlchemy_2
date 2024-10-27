@@ -17,11 +17,14 @@ def get_sel_products(url):
         query = select(products)
         result = con.execute(query)
 
-
         for product in result:
             print(product)
 
         print("Данные успешно получены.")
 
 
-get_sel_products()
+try:
+    get_sel_products()
+except Exception as e:
+    print(f"Ошибка: {e}")
+

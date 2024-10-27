@@ -13,7 +13,7 @@ def insert_inside_provider(url):
 
 
         for i in range(10):
-            name_of_provider = fake.word()
+            name_of_provider = fake.text(max_nb_chars=5)
             representative = fake.text(max_nb_chars=5)
             speak_to = fake.text(max_nb_chars=5)
             phone = fake.random_number(digits=9)

@@ -15,7 +15,7 @@ def get_sel_client(url):
         clients = result.fetchall()
 
         for client in clients:
-            print(client)
+            print(type(client))
 
         print("Данные успешно получены.")
 
